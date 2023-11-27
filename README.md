@@ -29,3 +29,11 @@ Plenty of useful information about your Introduction to Kafka with Spring Boot c
 ## Connect with the team at Lydtech Consulting
 * Visit us at [lydtechconsulting.com](https://www.lydtechconsulting.com/)
 * Visit our [LinkedIn](https://www.linkedin.com/company/lydtech-consulting) page
+
+## Commands for Kafka, Application and Producer in starting order is following
+* Kafka    | bin/kafka-server-start.sh config/kraft/server.properties 
+* App      | mvn spring-boot:run
+* Producer | bin/kafka-console-producer.sh --topic order.created --bootstrap-server localhost:9092
+* Consumer | bin/kafka-console-consumer.sh --topic order.dispatched --bootstrap-server localhost:9092
+
+
