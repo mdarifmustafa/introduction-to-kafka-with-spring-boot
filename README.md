@@ -32,7 +32,7 @@ Plenty of useful information about your Introduction to Kafka with Spring Boot c
 
 ## Commands for Kafka, Application and Producer in starting order is following
 * Kafka    | bin/kafka-server-start.sh config/kraft/server.properties 
-* App      | mvn spring-boot:run
+* App      | mvn spring-boot:run | mvn spring-boot:run -Dspring-boot.run.profiles=debug
 * Producer | bin/kafka-console-producer.sh --topic order.created --bootstrap-server localhost:9092
 * Consumer | bin/kafka-console-consumer.sh --topic order.dispatched --bootstrap-server localhost:9092
 
